@@ -133,7 +133,8 @@ return array(
 		'SalesConnect\Agency\AgencyServiceProvider',
 		'SalesConnect\Project\ProjectServiceProvider',
 		'SalesConnect\Client\ClientServiceProvider',
-		'SalesConnect\Ae\AeServiceProvider'
+		'SalesConnect\Ae\AeServiceProvider',
+		'SalesConnect\Edit\EditServiceProvider'
 
 
 

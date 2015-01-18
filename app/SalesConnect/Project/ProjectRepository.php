@@ -2,16 +2,19 @@
 
 use SalesConnect\Project\ProjectInterface;
 use SalesConnect\Client\ClientInterface;
+use SalesConnect\Edit\EditInterface;
 use \Project;
 
 class ProjectRepository implements ProjectInterface{
 
 	protected $project;
 	protected $client;
+	protected $edit;
 
-	public function __construct(Project $project, ClientInterface $client){
+	public function __construct(Project $project, ClientInterface $client, EditInterface $edit){
 		$this->project = $project;
 		$this->client = $client;
+		$this->edit = $edit;
 	}
 
 	public function getAll(){
